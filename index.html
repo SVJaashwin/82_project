@@ -1,32 +1,35 @@
-<!DOCTYPE html>
 <html>
-<head>
 
-<title>My first canvas</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+    </script>
+
 </head>
+
 <body class="body_backgorund">
 
-<center>
-	<h1>My First Canvas</h1>
-	<canvas id="my_Canvas" width="800" height="600">
-      
-	</canvas>
-	<span>
-	<h2> Radius - </h2>
-	<input id="text_Radius"  type="text" placeholder="type here"> </text_input>
-    </span>
-	<span>
-	<h2> colour - </h2>
-	<input id="text_colour"  type="text" placeholder="type here"> </text_input>
-	</span>
-	<span>
-	<h2> Width of the line - </h2>
-	<input id="text_width"  type="text" placeholder="type here"> </text_input>
-	</span>
-</center>
+    <div align="center">
+        <h1>Paint</h1>
 
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+        <br><br>
 
-<script src="main.js"></script>
+        <!--Additional activity -->
+        <span>
+            <span>
+                <h3> Radius - </h3> <input type="number" id="Radius">
+            </span>
+        <span>
+                <h3> Colour - </h3> <input type="text" id="Colour">
+            </span>
+        <span> 
+                <h3> width of the line</h3> <input type="number" id="line_width">
+            </span>
+        </span>
+    </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
