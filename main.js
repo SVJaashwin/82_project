@@ -4,17 +4,10 @@ ctx = canvas.getContext("2d");
 var mouseEvent = "Empty";
 var lastPositionX, lastPositionY;
 
-var Radius = 50;
-var Colour = blue;
-var lineWidth = 1;
-
 canvas.addEventListener("mousedown", my_mouseDown);
 
 function my_mouseDown(e) {
     mouseEvent = "mousedown";
-    Radius = document.getElementById("Radius").value;
-    Colour = document.getElementById("Colour").value;
-    lineWidth = document.getElementById("line_width").value;
 }
 
 canvas.addEventListener("mouseup", my_mouseup);
@@ -39,9 +32,9 @@ function my_mousemove(e) {
 
     if (mouseEvent == "mousedown") {
         ctx.beginPath();
-        ctx.lineWidth = lineWidth;
-        ctx.strokeStyle = Colour;
-        ctx.arc(currentPostionX, currentPostionY, Radius, 0, 2 * Math.PI);
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = "red";
+        ctx.arc(currentPostionX, currentPostionY, 50, 0, 2 * Math.PI);
         ctx.stroke();
     }
     lastPositionX = currentPostionX;
